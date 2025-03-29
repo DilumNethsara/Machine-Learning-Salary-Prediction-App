@@ -1,0 +1,73 @@
+/* style.css - Dark Mode */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for readability */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between form elements */
+  width: 300px; /* Form width */
+  padding: 20px;
+  border: 1px solid #333; /* Subtle border */
+  border-radius: 10px;
+  background-color: #1e1e1e; /* Dark form background */
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #444; /* Border for inputs */
+  border-radius: 5px;
+  background-color: #2c2c2c; /* Dark input background */
+  color: #e0e0e0; /* Light text color */
+}
+
+input[type="number"]::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff; /* Blue button background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #00ff7f; /* Green for results */
+  text-align: center;
+}

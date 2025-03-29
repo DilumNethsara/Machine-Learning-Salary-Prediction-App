@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Prediction App</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+  </head>
+  <body>
+    <h1>Salary Prediction App</h1>
+    <form method="POST" action="/predict">
+      <label>Years of Experience</label>
+      <input type="number" name="years" required />
+
+      <label>Worked hours per week</label>
+      <input type="number" name="hours" required />
+
+      <button type="submit">Predict Salary</button>
+    </form>
+
+    {% if result %}
+    <h3>Your salary is {{result}}</h3>
+    {% endif %}
+  </body>
+</html>
